@@ -1,0 +1,115 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #000924;
+    background: linear-gradient(90deg,rgba(0, 9, 36, 1) 0%, rgba(9, 72, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.business-card {
+    background-color: #1e1e1e;
+    background-color: rgba(0,0,0,0.8);
+    color: #f0f0f0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #000924;
+}
+
+.header {
+    text-align: center;
+}
+.header h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    text-shadow: 2px 2px 5px #478eff;
+}
+
+.main-section {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px
+}
+
+.left-section {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.left-section img{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(102, 163, 255, 0.4);
+}
+
+.right-section {
+    flex: 2;
+    background-color: #3e5a94;
+    border-radius: 12px;
+}
+.right-section h1 {
+    margin: 5px 0 0 5px;
+}
+
+.right-section li {
+    margin-bottom: 8px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: justify;
+    background-color: #3e5a94;
+    border-radius: 12px;
+    padding: 20px;
+    color: #e3eafc;
+    line-height: 1.6;
+}
+
+.social-links {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.social-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .left-section img {
+        max-width: 150px;
+    }
+}
