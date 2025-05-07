@@ -12,17 +12,18 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .business-card {
     background-color: #1e1e1e;
     background-color: rgba(0,0,0,0.8);
     color: #f0f0f0;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding: 30px 40px;
+    padding: 30px 20px;
     box-sizing: border-box;
     border-radius: 15px;
     box-shadow: 10px 10px 10px #000924;
@@ -111,5 +112,24 @@ body {
 
     .left-section img {
         max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section img {
+        max-width: 120px;
+    }
+
+    .right-section h1 {
+        font-size: 1.2em;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
     }
 }
